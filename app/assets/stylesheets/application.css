@@ -16,13 +16,19 @@ body {
 
 .container h1 {
     font-size: 35px;
-    color: #361D1D;
+    color: #3e2323;
 }
 
 .child {
     width: 500px;
     height: 600px;
   }
+
+.child h2 {
+    font-size: 40px;
+    border-top: 2px solid #361D1D;
+    border-bottom: 2px solid #361D1D;
+}
 
 .btn {
 	display: block;
@@ -46,12 +52,30 @@ a.btn_06:hover {
 
 .buttons {
     display: flex;
-  }
+}
+
+table {
+    font-size: 18px;
+    border: 3px double #361D1D;
+    border-collapse: collapse;
+}
+
+table .center {
+    text-align: center;
+}
+
+table .left {
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #361D1D;
+}
 
 .show_btn {
 	display: inline-block;
 	text-decoration: none;
-	width: 80px;
+	width: 85px;
 	margin: 0px 20px 60px;
 	padding: 1rem 4rem;
 	font-weight: bold;
@@ -68,4 +92,15 @@ a.btn_06:hover {
 .share {
     border-bottom: 5px solid #245B77;
 	background: #3584ac;
+}
+
+.wiki {
+    display: block;
+    border-bottom: 5px solid #527217;
+	background: #7EAB34;
+}
+
+.wiki_center {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
 }

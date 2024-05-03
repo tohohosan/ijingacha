@@ -5,20 +5,37 @@
         <%= image_tag "#{@denki.image_url}", width: '250', height: '250'  %>
       <div>
       <br>
-        <%= @denki.year%>
+      <table>
+        <tr class="center">
+        <th>生没年</th>
+        <td><%= @denki.year %></td>
+        </tr>
+        <tr class="center">
+          <th>出身地</th>
+          <td><%= @denki.birthplace %></td>
+        </tr>
+        <tr class="left">
+          <th>説明</th>
+          <td><%= simple_format(@denki.description) %></td>
+        </tr>
+    </table>
       </div>
       <div>
       <br>
-        <%= @denki.birthplace%>
-      </div>
-      <div>
-      <br>
-        <%= @denki.description%>
       </div>
       <br><br>
       <div class="buttons">
-        <%= link_to '次の伝記', denki_path, class: "show_btn other" %>
-        <%= link_to 'シェア', denki_path, class: "show_btn share" %>
+        <%= link_to denki_path, class: "show_btn other" do %>
+          <i class="fa-solid fa-book-open"></i> 次の伝記
+        <% end %>
+        <%= link_to denki_path, class: "show_btn share" do %>
+          <i class="fa-solid fa-x"></i> シェア
+        <% end %>
+      </div>
+      <div class="buttons wiki_center">
+        <%= link_to "https://ja.wikipedia.org/wiki/#{@denki.name}", class: "show_btn wiki" do %>
+          <i class="fa-solid fa-globe"></i> Wiki
+        <% end %>
       </div>
     <% else %>
       <h2>伝記が見つからないよ！</h2>
