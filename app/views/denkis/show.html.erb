@@ -1,0 +1,27 @@
+<div class = 'container'>
+  <div class = 'child'>
+    <% if @denki.present? %>
+      <h2><%= @denki.name %></h2>
+        <%= image_tag "#{@denki.image_url}", width: '250', height: '250'  %>
+      <div>
+      <br>
+        <%= @denki.year%>
+      </div>
+      <div>
+      <br>
+        <%= @denki.birthplace%>
+      </div>
+      <div>
+      <br>
+        <%= @denki.description%>
+      </div>
+      <br><br>
+      <div class="buttons">
+        <%= link_to '次の伝記', denki_path, class: "show_btn other" %>
+        <%= link_to 'シェア', denki_path, class: "show_btn share" %>
+      </div>
+    <% else %>
+      <h2>伝記が見つからないよ！</h2>
+    <% end %>
+  </div>
+</div>

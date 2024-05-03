@@ -1,9 +1,5 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Denki.create([
+  { name: "織田 信長", image_url: "nigaoe_oda_nobunaga.png", year: "1534~1582", birthplace: "尾張国（現在の愛知県）", description: "織田信長は、一地方領主から始まり、家督争いを解決した後、桶狭間の戦いで今川義元を倒し、力を増やしたよ。その後、将軍の足利義昭を追放して、自分だけの政権（「織田政権」）を作ったんだ。しかし、1582年に家臣の明智光秀に裏切られ、本能寺で自害してしまったよ。信長の政策は、その後の豊臣秀吉の政権や徳川家康の江戸幕府に影響を与えたんだ。ちなみに本能寺は、当時の場所とは違うけど、今も京都にあるよ！" },
+  { name: "豊臣 秀吉", image_url: "nigaoe_toyotomi_hideyoshi.png", year: "1537~1598", birthplace: "尾張国（現在の愛知県）", description: "豊臣秀吉は、農民の家から始まり、織田信長の家臣として働き、信長が亡くなった後、日本全国を統一したよ。彼は「天下人」、「武家関白」、「太閤」と呼ばれ、日本の社会を整えたんだ。また、全国的な政策を推進し、大きな財力を手に入れたよ。彼の時代の文化は「桃山文化」と呼ばれるんだ。晩年には朝鮮に出兵したんだけど成功せず、彼が亡くなった後、幼い息子の秀頼を五大老と五奉行に託したんだ。" },
+  # 他のデータも同様に追加
+])

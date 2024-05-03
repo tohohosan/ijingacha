@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'staticpages#top'
-  get '/ijin', to: 'ijin#show', as: 'ijin'
+  get '/denki', to: 'denkis#show', as: 'denki'
 end

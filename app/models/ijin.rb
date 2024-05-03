@@ -1,2 +1,0 @@
-class Ijin < ApplicationRecord
-end

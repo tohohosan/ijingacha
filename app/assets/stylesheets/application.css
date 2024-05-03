@@ -1,26 +1,27 @@
 body {
-    background-image: url('/assets/washi.jpg'); /* 背景画像を設定 */
+    background-image: url('/assets/wood.jpg'); /* 背景画像を設定 */
     background-size: cover; /* 背景画像をいい感じにフィットさせる */
     background-position: center; /* 背景画像を中央に配置 */
     background-repeat: no-repeat; /* 背景画像が繰り返されないようにする */
+    background-attachment: fixed; /* 背景画像をビューポートに固定 */
 }
 
 .container {
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 30px;
 }
 
 .container h1 {
     font-size: 35px;
+    color: #361D1D;
 }
 
 .child {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 600px;
   }
 
 .btn {
@@ -31,9 +32,9 @@ body {
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
-	border-radius: 100vh;
-	border-bottom: 7px solid #0686b2;
-	background: #27acd9;
+	border-radius: 100px;
+	border-bottom: 7px solid #527217;
+	background: #7EAB34;
 	color: #fff;
     font-size: 20px;
 }
@@ -41,4 +42,30 @@ a.btn_06:hover {
 	margin-top: 6px;
 	border-bottom: 1px solid #0686b2;
 	color: #fff;
+}
+
+.buttons {
+    display: flex;
+  }
+
+.show_btn {
+	display: inline-block;
+	text-decoration: none;
+	width: 80px;
+	margin: 0px 20px 60px;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border-radius: 100px;
+	color: #fff;
+    font-size: 15px;
+}
+
+.other {
+    border-bottom: 5px solid #930B11;
+	background: #d53840;
+}
+
+.share {
+    border-bottom: 5px solid #245B77;
+	background: #3584ac;
 }
