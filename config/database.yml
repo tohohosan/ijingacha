@@ -8,6 +8,8 @@ default: &default
 development:
   <<: *default
   database: petite_denki_development
+  host: /tmp
+  port: 5432
 
 test:
   <<: *default
