@@ -1,11 +1,17 @@
 <div class= 'container'>
   <div class = 'child'>
-    <%= image_tag 'library.png', width: '400', height: '300' %>
+    <br>
+    <%= image_tag 'library.png', width: '400', height: '300', class: "top_image" %>
     <br>
     <h1>伝記を読もう！</h1>
+    <div>
+        子どもの頃、図書館で読んだ伝記。<br>大人になった今、伝記を読んで偉人について学んでみませんか？
+    </div>
+    <br>
     <br>
     <div>
-      <%= link_to '読む！', denki_path, class: "btn" %>
+        <%= link_to '読む！', denki_path, class: "btn" %>
     </div>
+    <br>
   </div>
 </div>

@@ -1,13 +1,54 @@
 body {
-    background-image: url('/assets/wood.jpg'); /* 背景画像を設定 */
-    background-size: cover; /* 背景画像をいい感じにフィットさせる */
-    background-position: center; /* 背景画像を中央に配置 */
-    background-repeat: no-repeat; /* 背景画像が繰り返されないようにする */
-    background-attachment: fixed; /* 背景画像をビューポートに固定 */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* ビューポートの高さに基づく */
+    position: relative;
+    padding-bottom: 50px; /* フッターの高さ分のパディングを追加 */
+
+    background-image: url('/assets/wood.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(29,16,16, 0.85);
+    position: fixed; /* ここを変更 */
+    width: 100%; /* ヘッダーの幅を画面全体に */
+    top: 0; /* ヘッダーを常に上に固定 */
+    z-index: 10; /* 一番上のレイヤーに設定 */
+}
+
+.header_logo a {
+    display: inline-block;
+    font-size: 25px;
+    color: #faebd7;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: static;
+}
+
+.header_logo, .credit {
+    padding: 0 20px; /* 必要に応じて調整 */
+    color: #faebd7;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #faebd7;
+    text-align: center;
 }
 
 .container {
-    padding-top: 30px;
+    padding-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +63,11 @@ body {
 .child {
     width: 500px;
     height: 600px;
-  }
+}
+
+.top_image {
+    border-radius: 20px;
+}
 
 .child h2 {
     font-size: 40px;
@@ -38,16 +83,12 @@ body {
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
-	border-radius: 100px;
-	border-bottom: 7px solid #527217;
+	border-radius: 90px;
+	border-bottom:6px solid #527217;
 	background: #7EAB34;
 	color: #fff;
     font-size: 20px;
-}
-a.btn_06:hover {
-	margin-top: 6px;
-	border-bottom: 1px solid #0686b2;
-	color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .buttons {
@@ -85,22 +126,28 @@ th, td {
 }
 
 .other {
-    border-bottom: 5px solid #930B11;
+    border-bottom: 6px solid #930B11;
 	background: #d53840;
 }
 
 .share {
-    border-bottom: 5px solid #245B77;
+    border-bottom: 6px solid #245B77;
 	background: #3584ac;
 }
 
 .wiki {
     display: block;
-    border-bottom: 5px solid #527217;
+    border-bottom: 6px solid #527217;
 	background: #7EAB34;
 }
 
 .wiki_center {
     display: flex;
     justify-content: center; /* 中央寄せ */
+}
+
+.btn:active, .show_btn:active {
+    position: relative;
+    top: 6px;
+    border-bottom: none;
 }
