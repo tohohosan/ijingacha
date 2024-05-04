@@ -28,7 +28,7 @@
         <%= link_to denki_path, class: "show_btn other" do %>
           <i class="fa-solid fa-book-open"></i> 次の伝記
         <% end %>
-        <%= link_to denki_path, class: "show_btn share" do %>
+        <%= link_to "https://twitter.com/intent/tweet?text=#{@denki.name} のぷち伝記を読んだよ！｜ぷち伝記 &url=https://petite-denki.onrender.com", class: "show_btn share" do %>
           <i class="fa-solid fa-x"></i> シェア
         <% end %>
       </div>
