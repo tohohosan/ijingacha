@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 65px;
     background-color: rgb(29,16,16, 0.85);
     position: fixed; /* ここを変更 */
     width: 100%; /* ヘッダーの幅を画面全体に */
@@ -26,9 +26,9 @@ header {
 
 .header_logo a {
     display: inline-block;
-    font-size: 25px;
+    font-size: 23px;
     color: #faebd7;
-    padding: 15px 20px;
+    padding: 15px;
     text-decoration: none;
     position: static;
 }
@@ -56,12 +56,16 @@ footer {
 }
 
 .container h1 {
-    font-size: 35px;
+    font-size: 27px;
     color: #3e2323;
 }
 
+.intro {
+    font-size: 13px;
+}
+
 .child {
-    width: 500px;
+    width: 410px;
     height: 600px;
 }
 
@@ -70,24 +74,24 @@ footer {
 }
 
 .child h2 {
-    font-size: 40px;
-    border-top: 2px solid #361D1D;
-    border-bottom: 2px solid #361D1D;
+    font-size: 30px;
+    border-top: 1.5px solid #361D1D;
+    border-bottom: 1.5px solid #361D1D;
 }
 
 .btn {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	width: 80px;
+	width: 45px;
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
-	border-radius: 90px;
-	border-bottom:6px solid #527217;
+	border-radius: 80px;
+	border-bottom:5px solid #527217;
 	background: #7EAB34;
 	color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,7 +100,7 @@ footer {
 }
 
 table {
-    font-size: 18px;
+    font-size: 15px;
     border: 3px double #361D1D;
     border-collapse: collapse;
 }
@@ -116,28 +120,29 @@ th, td {
 .show_btn {
 	display: inline-block;
 	text-decoration: none;
-	width: 85px;
-	margin: 0px 20px 60px;
-	padding: 1rem 4rem;
+	width: auto;
+    min-width: 120px; /* 最小幅を指定して、テキストが1行に収まるようにする */
+	margin: 0px 10px 40px;
+	padding: 1rem 2rem;
 	font-weight: bold;
 	border-radius: 100px;
 	color: #fff;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .other {
-    border-bottom: 6px solid #930B11;
+    border-bottom: 5px solid #930B11;
 	background: #d53840;
 }
 
 .share {
-    border-bottom: 6px solid #245B77;
+    border-bottom: 5px solid #245B77;
 	background: #3584ac;
 }
 
 .wiki {
     display: block;
-    border-bottom: 6px solid #527217;
+    border-bottom: 5px solid #527217;
 	background: #7EAB34;
 }
 
@@ -148,6 +153,6 @@ th, td {
 
 .btn:active, .show_btn:active {
     position: relative;
-    top: 6px;
+    top: 5px;
     border-bottom: none;
 }
