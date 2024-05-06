@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #2c1a1a;
     font-family:'メイリオ', 'Meiryo', sans-serif;
 }
 
@@ -62,7 +63,7 @@ footer {
 }
 
 .intro {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .child {
@@ -76,7 +77,6 @@ footer {
 
 .child h2 {
     font-size: 30px;
-    color: #2c1a1a;
     border-top: 1.5px solid #361D1D;
     border-bottom: 1.5px solid #361D1D;
 }
