@@ -76,6 +76,7 @@ footer {
 
 .child h2 {
     font-size: 30px;
+    color: #2c1a1a;
     border-top: 1.5px solid #361D1D;
     border-bottom: 1.5px solid #361D1D;
 }
@@ -102,6 +103,8 @@ footer {
 
 table {
     font-size: 15px;
+    color: #1b1010;
+    font-weight: 450;
     border: 3px double #361D1D;
     border-collapse: collapse;
 }
