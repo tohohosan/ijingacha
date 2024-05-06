@@ -5,6 +5,12 @@
     <link rel="icon" href="/faviconbook.png" type="image/x-icon">
     <title>ぷち伝記</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<%= request.original_url %>" />
+    <meta name="twitter:title" content="<%= content_for?(:title) ? yield(:title) : "ぷち伝記" %>" />
+    <meta name="twitter:description" content="ぷち伝記を読んで、偉人について学ぼう！" />
+    <meta name="twitter:image" content="<%= image_url('library.png') %>" />
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
